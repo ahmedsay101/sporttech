@@ -4,7 +4,7 @@ import './Contact.css';
 const PHONE = '01112288456';
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', product: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', product: '', city: '', area: '', street: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
@@ -12,7 +12,7 @@ export default function Contact() {
   const handleSubmit = e => {
     e.preventDefault();
     const text = encodeURIComponent(
-      `New Inquiry from ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nProduct Interest: ${form.product}\nMessage: ${form.message}`
+      `طلب صيانة جديد\nالاسم: ${form.name}\nالهاتف: ${form.phone}\nالبريد: ${form.email}\nنوع الجهاز: ${form.product}\nالمحافظة: ${form.city}\nالمنطقة: ${form.area}\nالعنوان: ${form.street}\nوصف المشكلة: ${form.message}`
     );
     window.open(`https://wa.me/2${PHONE}?text=${text}`, '_blank');
     setSubmitted(true);
@@ -112,6 +112,55 @@ export default function Contact() {
                   <option value="أجهزة مقاومة">جهاز رياضي</option>
                   <option value="أخرى">أخرى</option>
                 </select>
+              </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label>المحافظة *</label>
+                  <select name="city" value={form.city} onChange={handleChange} required>
+                    <option value="">اختر المحافظة...</option>
+                    <option>القاهرة</option>
+                    <option>الجيزة</option>
+                    <option>الإسكندرية</option>
+                    <option>الشرقية</option>
+                    <option>الدقهلية</option>
+                    <option>حلوان</option>
+                    <option>المنوفية</option>
+                    <option>القليوبية</option>
+                    <option>السويس</option>
+                    <option>بورسعيد</option>
+                    <option>أسيوط</option>
+                    <option>سوهاج</option>
+                    <option>دمياط</option>
+                    <option>كفر الشيخ</option>
+                    <option>المنيا</option>
+                    <option>بني سويف</option>
+                    <option>الفيوم</option>
+                    <option>مرسى مطروح</option>
+                    <option>أخرى</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label>المنطقة / الحي *</label>
+                  <input
+                    type="text"
+                    name="area"
+                    placeholder="مثل: مدينة نصر، المعادي"
+                    value={form.area}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <label>العنوان بالتفصيل *</label>
+                <input
+                  type="text"
+                  name="street"
+                  placeholder="رقم الشقة / الفيلا، اسم الشارع، أقرب علامة مميزة"
+                  value={form.street}
+                  onChange={handleChange}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label>وصف المشكلة</label>
