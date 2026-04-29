@@ -8,7 +8,7 @@ export default function BrandSection() {
         <div className="brand-divider" />
         <div className="brand-text">
           <h2 className="brand-title">
-            متخصصون في <span className="text-red">صيانة وإصلاح</span> أجهزة الجيم و الماركات العالمية
+            متخصصون في <span className="text-red">صيانة وإصلاح</span> أجهزة الجيم <br  /> و الماركات العالمية
           </h2>
           <p className="brand-desc">
             خبرة أكثر من 10 سنوات في إصلاح التردميل وجميع أجهزة الرياضة —
