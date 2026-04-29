@@ -1,0 +1,157 @@
+.footer {
+  background: #0a0a0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding: 70px 0 48px;
+}
+
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.accent {
+  color: #e63946;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.65;
+  margin-bottom: 24px;
+  max-width: 280px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.social-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.social-wa {
+  background: #25d366;
+}
+
+.social-fb {
+  background: #1877f2;
+}
+
+.wa-btn {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: background 0.2s;
+  margin-left: 10px;
+}
+
+.wa-btn:hover {
+  background: #128c7e;
+}
+
+.fb-btn {
+  display: inline-block;
+  background: #1877f2;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+
+.fb-btn:hover {
+  background: #0f5bbf;
+}
+
+.footer-links-group h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-links-group ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links-group li,
+.footer-links-group a {
+  font-size: 0.88rem;
+  color: #6b7280;
+  transition: color 0.2s;
+}
+
+.footer-links-group a:hover {
+  color: #e63946;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #4b5563;
+}
+
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

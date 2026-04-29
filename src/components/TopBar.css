@@ -1,0 +1,19 @@
+.topbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+.topbar-logo {
+  height: 110px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
