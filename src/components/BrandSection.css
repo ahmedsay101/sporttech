@@ -9,7 +9,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 48px;
   flex-wrap: wrap;
 }
@@ -24,7 +24,7 @@
 
 .brand-divider {
   width: 2px;
-  height: 140px;
+  align-self: stretch;
   background: rgba(230, 57, 70, 0.35);
   flex-shrink: 0;
 }
