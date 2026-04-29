@@ -8,17 +8,22 @@ export default function BrandSection() {
         <div className="brand-divider" />
         <div className="brand-text">
           <h2 className="brand-title">
-            متخصصون في <span className="text-red">صيانة وإصلاح</span> أجهزة الجيم
+            متخصصون في <span className="text-red">صيانة وإصلاح</span> أجهزة الجيم و الماركات العالمية
           </h2>
           <p className="brand-desc">
             خبرة أكثر من 10 سنوات في إصلاح التردميل وجميع أجهزة الرياضة —
             نصلك في نفس اليوم في أي مكان.
           </p>
           <div className="brand-badges">
-            <span className="brand-badge">🔧 إصلاح تردميل</span>
-            <span className="brand-badge">🚲 إصلاح بايسكل</span>
-            <span className="brand-badge">⚡ إليبتيكال</span>
-            <span className="brand-badge">🏋️ أجهزة المقاومة</span>
+            <span className="brand-badge">إصلاح اجهزة سبرينت</span>
+            <span className="brand-badge">إصلاح اجهزة سايبكس</span>
+            <span className="brand-badge">إصلاح اجهزة ماتركس</span>
+            <span className="brand-badge">إصلاح اجهزة تكنو جيم</span>
+            <span className="brand-badge">إصلاح اجهزة ام بي اتش</span>
+            <span className="brand-badge">إصلاح اجهزة ستارتراك</span>
+            <span className="brand-badge">إصلاح اجهزة لايف فيتنس</span>
+            <span className="brand-badge">إصلاح اجهزة جاجور</span>
+            <span className="brand-badge">إصلاح اجهزة فيجور</span>
           </div>
         </div>
       </div>
